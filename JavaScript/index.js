@@ -31,8 +31,8 @@ Line 3
 //   [s]: "ABCD"
 // }
 
-console.log(obj);
+// console.log(obj);
 
 // let s = Symbol("ABCD");
 
-let abcd = [1, 2, 3, 4, 5, 6];
+// let abcd = [1, 2, 3, 4, 5, 6];
