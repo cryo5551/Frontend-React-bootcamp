@@ -38,3 +38,6 @@ console.log(multiply_3(9, 8, 6));
     console.log(a+b);
 })(4,8);
 
+function swap(a,b){
+    
+}

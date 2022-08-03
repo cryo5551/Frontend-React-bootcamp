@@ -72,4 +72,9 @@ Runner.prototype.gameOver =()=>{};
 - prompt is used to take inputs from user in javascript.
 - syntex: prompt(Hint);
 
+## Assignment:
+1. write a function to swap two numbers.
+2. Write a function to genrate a random string with taking the length.
+- we have to use rand function
+
 ## Arrow function(different ways to write)
