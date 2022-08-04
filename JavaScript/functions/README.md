@@ -1,17 +1,17 @@
 
-### Functions
+## Functions
 - function is set of instructions (block of code) it performes a specific task we can use it in program multiple times.
 
-**semi-colon are not neccesory but its good habit to give ";" at the end of the line**
+- **semi-colon are not neccesory but its good habit to give ";" at the end of the line**
 
-## Named functions
+### Named functions
 - its a basic regular function
 - syntex:
   - function fun_name(){
     code//...
   }
 
-## Argument vs Parameter
+### Argument vs Parameter
 - Argument are what we pass when calling the function.
 - Parameter is the name of the parameter that will be passed to the function.
 - they are also called formal parameters.
@@ -22,14 +22,14 @@
  }
 - fun_name(argument);
 
-## defaulter parameters
+### defaulter parameters
 - these are the values we give to parameters if there a no argument passesed.
 - so if were sending less arguments then we have to set the parameter to a default value.
 
-## Undefined parameters
+### Undefined parameters
 - if were not sending the argument and the default value of the parameter is undefined then itll show undefined.
 
-## Return 
+### Return 
 - this will return the value after task is performed.
 - we can save the value of function in a variable or we can just use it directly.
 
@@ -37,7 +37,7 @@
  - function fun_name(parameters) { ...code ... }
  - const variable = fun_name(arguments);
 
-##  Anonymous function
+###  Anonymous function
 - there is no function name present.
 - we define the fuction as a variable.
 - the refrence for this function will be stored in a variable.
@@ -49,15 +49,15 @@
  - console.log(variable_name(arguments));
 
 - the Advantages of this function is security reasons we cannot acess these type of functions outside of the scope of the function.
-**use const as function variable datatype**
+- **use const as function variable datatype**
 
-## dinasaur game hack
+### dinasaur game hack
 Runner.prototype.gameOver = function(){};
 
-## Function expression
+### Function expression
 - The functions that use 'function' keyword are called function expression.
 
-## IIFE 
+### IIFE 
 - Immediately Invoke function expression.
 - its a function that is defined and exicuted immidiately only once in thr entire program;
 - we cannot invoke it if wanted to to.
@@ -66,18 +66,18 @@ Runner.prototype.gameOver = function(){};
  - (function(parameters){
     code....//
  })(arguments);
-**All IIFE functions are annonymus functions**
+- **All IIFE functions are annonymus functions**
 
-## Taking input from user
+### Taking input from user
 - prompt is used to take inputs from user in javascript.
 - syntex: prompt(Hint);
 
-## Assignment:
+### Assignment:
 1. write a function to swap two numbers.
 2. Write a function to genrate a random string with taking the length.
 - we have to use rand function
 
-## Arrow function(different ways to write)
+### Arrow function(different ways to write)
 - its also an annonymus function.
 - introduced in ES6(2015)
 - we dont use function keyword in this type of function
@@ -104,24 +104,24 @@ Runner.prototype.gameOver = function(){};
  const addition = (num1, num2) => console.log(num1+num2);
  addition(5,8);
 
-## Callback function
+### Callback function
 - Any function we sending as an argument will be called callback function.
 - Ex:
  - setTimeout(function(), 5000);  
 
 
-## First order function & Higher Order Functions;
+### First order function & Higher Order Functions;
 - higer order functions are those functions that accept an function as an argument.
 - It returns a function.
 
-**cosole.log is Not a higher order function its a FOF**
+- **cosole.log is Not a higher order function its a FOF**
 
-## First class function
+### First class function
 - Any function that is assinged to a variable is called first class function.
 - It can be treated as an variable.
 - Ex: const variable = function(){code ...}
 
-## Rest Oprator
+### Rest Oprator
 - It Allows to Have infinite number of arguments.
 - syntex: ...Varable_name
 - # 93
@@ -130,7 +130,7 @@ Assignments:
 1. Create a function that accepts n number of strings, from those strings you need to print thr string that contains maximum number of vowels;
 2. similar to what we did with sum do it with multiplication for 3 levels(returning a function)
 
-## Returning a function
+### Returning a function
 - we can define a function inside a function;
 - we can return a function from another function.
 - syntex: parent{_function(){
@@ -138,13 +138,13 @@ Assignments:
 
   return child_function;
 }
-**these functions have closure to thier parent function means it can use the parameters of parent function**
+- **these functions have closure to thier parent function means it can use the parameters of parent function**
 
 - cheak Example at 127;
 
-## What is closure
+### What is closure
 - Nesting (bundling) of functions are returned which contains a refrence to its laxical scope/envirement;
 
-## Currying
+### Currying
 - this is 95% same as clousere
 - In the child function, insted of passing all the arguments together, we pass them separately;
