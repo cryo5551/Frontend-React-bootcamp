@@ -132,3 +132,45 @@ const addi = (a) => {
 }
 
 addi(4)(10);
+
+
+// Assignment
+const max_vow = (...strrigs) =>{
+    let arr =[];
+    let count = 0;
+    for(let i = 0; i < strrigs.length; i++) {
+        for(let j = 0; j < strrigs[i].length; j++) {
+            let ch = strrigs[i].charAt(j);
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='o'||ch=='u') count++;
+
+        }
+        arr[i] = count;
+        count =0;
+    }
+    let max = 0;
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] > max){
+            max = arr[i];
+            var idx = i;
+        }
+
+    }
+    console.log(arr);
+    console.log(strrigs[idx]);
+}
+
+max_vow("hayna","nope","hay","naziaaa","oprator","kamis","lois");
+
+const multi = (a) => {
+    const multi2 = (b) => {
+
+        const multi3 = (c) => {
+            console.log(a*b*c);
+        }
+        return multi3;
+    }
+    return multi2;
+    
+}
+
+multi(3)(2)(400);

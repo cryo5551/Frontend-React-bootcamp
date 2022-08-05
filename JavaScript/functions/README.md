@@ -126,9 +126,6 @@ Runner.prototype.gameOver = function(){};
 - syntex: ...Varable_name
 - # 93
 
-Assignments:
-1. Create a function that accepts n number of strings, from those strings you need to print thr string that contains maximum number of vowels;
-2. similar to what we did with sum do it with multiplication for 3 levels(returning a function)
 
 ### Returning a function
 - we can define a function inside a function;
@@ -148,3 +145,7 @@ Assignments:
 ### Currying
 - this is 95% same as clousere
 - In the child function, insted of passing all the arguments together, we pass them separately;
+
+### Assignments:
+1. Create a function that accepts n number of strings, from those strings you need to print thr string that contains maximum number of vowels;
+2. similar to what we did with sum do it with multiplication for 3 levels(returning a function)
