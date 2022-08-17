@@ -154,6 +154,61 @@ const users = {
 Object.keys.forEach
 
 
+### Scope
+- It tells us weather a variable can be acessed (refrenced) in a block of code.
+- Scope defind where the variable can be refrenced.
+- If you have the refrence, you are in the scope, if you dont have the refrence, you are not in the scope.
+
+### Globle scope
+- this can be acessed from anywhere.
+- Even from a different file.
+
+### Window scope
+- This is very similar to the global scope. 
+- just that we use window keyword.
+- it is okey to use interchangably with the global scope.
+- This is the highest scope as so global scope.
+- Syntex :  window.variable = <value>
+
+### Functional scope
+- this is accessible inside a function.
+
+### Module scope
+- If we define in a module, we can only access it there.
+- If we define a variable on a single file, we can only use it on the file.
+
+### Block scope
+- only acessible inside a block.
+- reffered as local block.
+
+### Shadowing
+- the parent block cannot access the child block
+- So, if there is same variable name in cilde and parent block, it will not care about it.
+
+- Ex. {
+  const <variable_name> =  <value>;
+  {
+    const <variable_name> = <value>;
+  }
+  console.log(<variable_name>);
+}
+
+- if we are using var then it'll override the variable cz its a global scope and dosent care about  anything.
+
+### Scope chaining
+- This means the child block can access the parent block's scope.
+
+- If we are using function, then we cannot accesse var outside a function;
+
+**If we dont give a scope specifier it becomes a globle/windows variable it can be accessed anywhere**
+
+## Hoisting
+- 
+
+## TDZ 
+
+
+
 ## Multi dimensional arrays 
 
 - <String>.split

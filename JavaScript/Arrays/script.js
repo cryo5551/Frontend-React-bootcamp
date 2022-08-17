@@ -42,6 +42,8 @@ console.log(arr2.slice(3,-4));
 
 // convert to string 
 // bY USING join
+// console.log(arr2.join());
+// // or
 // console.log(arr2.join(","));
 
 // shift and pop
@@ -67,4 +69,9 @@ console.log(arr2.length);
 
 
 
+const arr12 = [5,3,9,0,-4,1,2,8,1];
+console.log(arr12.sort());
 
+const sqr_sum = arr12.reduce((sum, element) => {return sum += Math.pow(element, 2);},0); 
+
+console.log(sqr_sum);
