@@ -195,3 +195,15 @@ const obj = {
   };
 
   console.log(users);
+
+  
+
+  function insidefun(fun){
+    called_fun();
+  }
+
+  function called_fun(){
+    console.log('called function');
+  }
+ 
+  insidefun(called_fun);
