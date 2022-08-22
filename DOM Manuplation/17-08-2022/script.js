@@ -37,3 +37,42 @@ elements[1].innerText = "New Button";
 
 // - querySelector()
 // - querySelectorAll()
+
+
+
+// Tasks
+// 1.
+const student_data = document.getElementsByClassName("class_data");
+// console.log(student_data);
+
+const student_arr = Array.from(student_data);
+
+student_arr.forEach((element, idx) => {
+    if (idx % 2 == 0)  element.style.backgroundColor = "rgba(255,49,50)";
+    else  element.style.backgroundColor = "rgba(155,149,150)";
+});
+
+
+
+  
+
+const misckif = () =>{
+    const cheakn = document.getElementById("check");
+    // console.log(cheakn.checked);
+
+    const element = document.getElementById("task2");
+
+    if(cheakn.checked == true){
+        element.style.backgroundColor = "#000000";
+        element.style.color = "#ffffff";
+    }
+
+    else{
+        element.style.backgroundColor = "#ffffff";
+        element.style.color = "#000000";
+    }
+}
+
+
+
+
