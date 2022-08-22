@@ -66,7 +66,6 @@ const misckif = () =>{
         element.style.backgroundColor = "#000000";
         element.style.color = "#ffffff";
     }
-
     else{
         element.style.backgroundColor = "#ffffff";
         element.style.color = "#000000";
