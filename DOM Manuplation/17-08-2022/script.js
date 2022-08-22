@@ -72,6 +72,7 @@ const misckif = () =>{
     }
 }
 
+Object.addeventlistner("click",misckif);
 
 
 

@@ -14,8 +14,8 @@ console.log(element);
 // const elements = document.querySelectorAll("ul:last-of-type > li");
 // console.log(elements);
 
-const elements = document.querySelectorAll("ul:nth-child(1) > li");
-console.log(elements);
+// const elements = document.querySelectorAll("ul:nth-child(1) > li");
+// console.log(elements);
 
 
 // const obj = document.getElementsByClassName("vakas");
