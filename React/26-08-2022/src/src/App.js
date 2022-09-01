@@ -1,16 +1,13 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import MyButton from './components/MyButton';
 
 function App() {
-  const btn_clicked = () => {
-    alert("Button is clickedhhhhh");
-  }
+  
   return (
     <div className="App">
       <header className="App-header">
-        
-        <button onClick={btn_clicked}>Click me</button>
-
+      <MyButton/>
       </header>
     </div>
   );

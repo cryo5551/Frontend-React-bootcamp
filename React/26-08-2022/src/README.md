@@ -69,6 +69,8 @@
 - Example:
   - App is a Component.
   - div / header / button is an element. 
+
+### creating a React Component
 - Each component should have each separate file.
 - Generally, we put all the components inside a directory called as components.
 - Whatever the file name we give, that should be the function/class name. That is the component name.
