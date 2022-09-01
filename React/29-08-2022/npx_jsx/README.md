@@ -1,70 +1,79 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Aug-29, 2022
 
-## Available Scripts
+# JSX
+- Javascript + XML
+- JavaScriptXML
+- Usage of JS and XML in a single file.
+- This allows the use of HTML inside JS.
+- Purpose is to make easy development of websites.
+- Makes development faster.
 
-In the project directory, you can run:
+**We can create React Applications WITHOUT JSX.**
+- Example:
+   - React.createElement('div', null, 'Hello World');
+   - ReactDOM.createRoot(document.blahblahblah);
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## NPX
+- Node Package Executor
+- This is used to execute any JS package.
+- We install using npm and execute/run the package using npx.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## create-react-app
+- CRA is a third party package built by facebook.
+- Executing this package will create the directory structure.
+- We don't need this package, we can create the same directory structure on our own.
+- But, using this package is going to be helpful. It saves time and reduces efforts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**Note: The website used to manage packages is npmjs. It is like a telephone directory but for node packages.**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Modules (import, export)
+- This is for Modular Programming Paradigm.
+- This is used for better security.
+- In a certain file, we can have multiple functions/classes/variables/etc. Out of which we might want to share only a few.
+- In that case, we only export those few things.
+- Similarly, instead of everything being avilable, we import what we need. So, we don't import unnecesarily.
+- Released somewhere between ES6 and ES9.
+- Here, 1 single file is considered as 1 single module.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Two ways to import/export.
 
-### `npm run eject`
+## Default Export/Import
+- This will export any variable/constant/function/object/etc.
+- The restriction is, 1 file can have only 1 default export.
+- The syntaxt is to tell which export is default:
+  - exmport default <variable_name>;
+- A single file can have 0 or 1 default exports. Nothing else.
+- To import a default export, we just use `import <name> from "filename";`
+- This name can be anything.
+- The reason we can give any name during import is that we are using default import. Now, from a single file, there can only be a single default export, therefore, when we import, JS will automatically map the custom name to the exported function.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Named Export/Import
+- This is the second approach.
+- There can be multiple named export from a single file.
+- There are multiple ways to export.
+  - Approach 1 - During the variable declaration, give export keyword.
+  - Approach 2 - Create an an object and export it directly. `export {fn1, fn2, fn3}`.
+- If we export a thousand things, it is possible to just import 1 of them.
+- In a named import, we can use `import {} from "file.js"`.
+- In 1 single line, we can have multiple imports. In fact, we can also combine default import and named imports in a single line of code.
+- In order to rename the imported refrence, we use the keyword `as`.
+- Example `import {originalName as customName} from "./file.js"`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Note: In Vanilla JS, we give the filename with .js extension. In React, this is not mandatory.**
+**Note: To use modules in Vanilla, we need to give type="module" when adding th4 script tag.** 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**In any way, we cannot export a single function twice.**
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Assignment:
+- Create modules for a calculator app.
+- In a file, have multiple functions (add, sub, mul, div, etc).
+- Export them using named export.
+- In index.js, import them and perform some sample calculations.
+- No nned fancy UI at this point.
