@@ -1,70 +1,77 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### components
+- It is re-usable functions/classes which contains the JSX;
+- JSX -> Javascript + XML.
+- Basically we can say its the functionl html with the help of javascript.
+- it contains DOM elements and its functnality.
+- one file can have multiple functions/classes, therefore it can have multiple components.
+- but we don't prefer using multiple classes/functions in a single file.
 
-In the project directory, you can run:
+- **Name must be in pascal casing not camel casing**
 
-### `npm start`
+- A component can return JSX.
+- make sure to write return properly
+- Syntex:: return(
+ -  JSX
+ - );
+- we have to export the component, commonly we use 
+ - Syntex:: export default ComponentName(in pascal casing);
+- normally there is only one component present so we use default(1 file, 1 component, 1 default );
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- normally to maintaine cleanner code structure, we create a directory called "components" and put all the components we use in there.
+- components provide code reusablity
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## props
+- props is short for properties.
+- props mean sending data from one component to another.
+- Typically it is parent to child.
+- app.js is parent component here and MyComponent is child component.
+- in parent  we will write in form of attributes and it'll go in the child as data; 
+- becouse we write that in html and we can only use attributes there.
+- child will recive the data in form of a object, that we can use in our JSX.
+- we will recive it as parameter in our child component.
+- only flow from parent to child and its data can be anything.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Parent and child
+- here in react App component is root.
+- the parent is the component that is importing data.
+- And the component that is getting exported and used is called child component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **It is possible that even we write console once, but it shows twice. That is because react will do pre-processing to check for errors and optimizations. We can fix that by going to index.js and removing <React.StrictMode> opening and closing tgs**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Styling
+- We use this to give better looks and design to our page.
+- We can change any look and feel, from a simple text color to a complicated animation.
+- This also is used to make website responsive.
+- We should be able to do this in React apps as well.
+- There are many ways to attach styling.
+  - External CSS -> Using index.css
+  - Index.css is imported at index.js level, therefore it is available pretty much everywhere.
+- In React, we don't use class attribute. Instead, we use className.
+  - Modular CSS -> For every module, we will have a css.
+  - The idea is better code organization.
+  - For each module, we will have it's relevant css file.
+  - This keep the code files organized and structured.
+  - Instead of having 1 very large file, we have more files but smaller in size comparatively.
+  - There is no security advantage, it will be applied everwhere. It's just for better code management and maintenance.
+- Third Approach: Inline styling.
+  - In the same like we give the style attribute.
+  - This attribute is actually an object.
+  - Here, we use camelCasing for the property. Instead of typically using kebab case for properties in the CSS file.
+  - We can directly write the style inline or use a variable. (Depends on the readability factor).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Note: When giving CSS classes based styling. DO NOT use class attribute, instead, use className attribute.**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Assignment:
+- Create a React application.
+- In that, create a component called as colorBox.
+- Reuse that component 4-5 times.
+- Every time, pass a unique color as a prop.
+- Change the color of that colorbox div into whatever is passed as prop.
