@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+p{
+  font-size: 0.8rem;
+}
+
+body{
+  background-image: url(./assets/bg.png);
+  background-size: 70vw 32rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .app{
+  
+} */
+
+.mainPage{
+  display: flex;
+  min-height: 23rem;
+  width: 51rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+
+.logInInfo{
+  background-color: white;
+  height: 23rem;
+  width: 33rem;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.logInInfo p{
+  margin: 0.8rem 1.4rem;
+  color: #08c995;
+}
+.line{
+  width: 2.5rem;
+  height: 0.09rem;
+  background-color: white;
+}
+.greet{
+  background-color: #0eca98;
+  height: 23rem;
+  width: 18.5rem;
+  color: white;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2, hr, p{
+  margin: 0.3rem;
+}
+
+.greet p{
+  margin-top: 0.8rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#signupBtn{
+  border: 00.1rem solid #ffffff;
+  background-color: #0eca98;
+  color: #ffffff;
+  margin: 1.5rem;
+  padding: 0.3rem 1.5rem;
+  border-radius: 15px;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#logos{
+  display: flex;
+}
+
+.logo{
+  margin: 0.5rem;
+  font-size: small;
+  text-align: center;
+  width: 1.14rem;
+  padding: 0.2rem;
+  font-weight:900;
+  border: 0.05rem solid rgb(178, 178, 177);
+  border-radius: 999px;
+
+}
+
+.input p{
+  font-size: 0.7rem;
+  color: rgb(117, 121, 123);;
+}
+
+.same{
+  border: 0.1rem solid rgb(183, 185, 186);
+  border-radius: 5px;
+  height: 1.5rem;
+  width: 15rem;
+  margin: 0.3rem;
+  padding: 0.1rem;
+}
+.inputhr{
+  background-color: #08c995;
+  width: 2.5rem;
+  height: 0.09rem;
+}
+h1{
+  color: #08c995;
+  font-size: 1.8rem;
+}
+.formelements{
+  font-size:0.7rem;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox{
+  margin-right:0.3rem;
+}
+.remember{
+  margin-right: 2.8rem;
+}
+#tnc{
+  font-size: 0.5rem;
+  color: rgb(117, 121, 123);
+  margin-top: 0.4rem;
+}
+
+#btn{
+  margin: 1.2rem;
+  padding: 0.2rem 2rem;
+  background-color: #08c995;
+  color: #ffffff;
+  border: transparent;
+  border-radius: 16px;
+  font-weight: bold;
+}
+
+#btn:hover{
+  background-color: #06eeb0;
+}
+
