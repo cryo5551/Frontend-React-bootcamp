@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background-image: url(./assets/bg.jpg);
+  color: rgb(229, 224, 224);
+  font-family: 'Segoe UI';
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer{
+  background-color: #212121;
+  border-top: 0.01rem solid #1e1d1d;
+  /* border-right: 0.069 solid grey; */
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#win{
+  width: 1.55rem;
+  margin: 0.2rem 0.3rem;
+}
+
+#moon{
+  width: 1.5rem;
+  margin: 0.3rem 20.3rem;
+  margin-right: 0;
+}
+
+#charging{
+  width: 1.17rem;
+  margin: 0.2rem 0.2rem;
+
+}
+
+#volume{
+  width: 1.1rem;
+  margin: 0.2rem 0.3rem;
+}
+#mails{
+  width: 1.69rem;
+  margin: 0.2rem 0.1rem;
+  border-right: 0.1rem solid grey;
+}
+
+.apps{
+  width: 1.6rem;
+  margin: 0.2rem 0.7rem;
+}
+
+#search-Bar{
+  border: 0.086rem solid gray;
+  width: 18rem;
+  background-color: #212121;
+  color: rgb(204, 215, 224);
+}
+
+.daily-Info{
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.arrow_up {
+  border: solid rgb(202, 202, 202);
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-135deg);
+  margin: auto 0.6rem;
+}
+p{
+  margin: auto 0.1rem;
+  font-size:smaller;
+}
+
+.LANG{
+  font-size: 0.8rem;
+  margin-left: 0.4rem;
+}
+
+.pp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-end;
+  margin: 0.3rem 0.69rem;
+}
+
+.active{
+  width: 1.45rem;
+  margin: 0 0.7rem;
+  padding: 0.2rem;
+  border-bottom: 0.15rem solid rgb(105, 104, 104);
+}
+
+.using{
+  width: 1.3rem;
+  background-color: rgb(59, 56, 56);
+  margin:0 0.4rem;
+  padding: 0.3rem;
+}
