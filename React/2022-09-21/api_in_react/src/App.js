@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
+  const [list, setList] = useState([]);
+  useEffect( _ => {
+    ( async _ => {
+      const responce = await fetch("https://reqres.in/api/users?page=2");
+      const data = await responce.json();
+      setList(data.data);
+      // console.log(data);
+    })();
+  },[]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h3>Sample Api call</h3>
+      <ul>
+      { list.map((element, idx) => {
+          return(
+            <li key={idx}>{element.first_name} {element.last_name} {element.email}</li>
+          )
+      })}
+      </ul>
     </div>
   );
 }

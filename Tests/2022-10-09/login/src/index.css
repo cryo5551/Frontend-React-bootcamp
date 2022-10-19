@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP:wght@300&display=swap');
+body{
+  margin: 0;
+  width: 100%;
+  background-color: rgb(190, 192, 255);
+  /* height: 100vh; */
+  font-family: 'Noto Sans JP', sans-serif;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.main{
+  background-color: #ffff;
+  border: 0.0001rem solid transparent;
+  margin: 4rem 1.8rem;
+  display: flex;
+  border-radius: 20px;
+}
+
+.left{
+  /* background-image: url(./assets/bg.png); */
+  /* background-repeat: no-repeat; */
+  /* background-position: right; */
+  background-color:rgb(128, 131, 255) ;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /* padding: 2rem; */
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  /* height: 33rem; */
+}
+
+.heading{
+  margin: 2.3rem 2.3rem;
+}
+
+h3{
+  margin: 0.01rem;
+  color: rgb(248, 240, 240);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+  margin: 0;
+  font-size: 1.4rem;
+  background: -webkit-linear-gradient(rgb(34, 5, 255), #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#bg{
+  width: 29rem;
+  border-bottom-left-radius: 20px;
+}
+
+.right{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.fullname{
+  display: flex;
+}
+
+p{
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: bolder;
+}
+
+input{
+  margin-bottom: 1.3rem;
+}
+
+.nn{
+  margin: 0.2rem;
+}
+
+.name{
+  border: 0.03rem solid rgb(172, 170, 170);
+  border-radius: 6.9px;
+  width: 12rem;
+  height: 1.69rem;
+}
+
+h1{
+  font-size: 1.69rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: rgb(146, 149, 250);
+  margin: 1.420rem;
+  margin-top: 2.69rem;
+  align-self: baseline;
+  margin-left: 9.9rem;
+}
+
+.info{
+  border: 0.03rem solid rgb(172, 170, 170);
+  border-radius: 6.9px;
+  width: 25rem;
+  height: 1.69rem;
+}
+
+#btn{
+  border: 0.03rem solid rgb(172, 170, 170);
+  border-radius: 6.9px;
+  width: 25rem;
+  height: 2rem;
+  padding: 0.2rem;
+  background-color: rgb(128, 131, 255);
+  color: #ffff;
+}
+
+.sbtns{
+  border: 0.03rem solid rgb(172, 170, 170);
+  border-radius: 4.9px;
+  padding: 0.4rem;
+  margin:0 1.3rem;
+  margin-left: 2.3rem;
+  /* padding: ; */
+  font-size: 0.9rem;
+  background-color: #ffff;
+}
+
+label{
+  font-size: 0.89rem;
+  font-weight: bold;
+}
+
+.btns{
+  text-decoration: none;
+  color: #333;
+  font-size: small;
+}
+
+.or{
+  margin: 0.8rem;
+}
+
+@media only screen and (max-width: 900px){
+  body{
+    /* margin: 0; */
+    /* width: 100%; */
+    background-color: rgb(190, 192, 255);
+    /* height: 100vh; */
+    font-family: 'Noto Sans JP', sans-serif;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+  }
+
+  .left{
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #bg{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+    background-color: rgb(199, 201, 248);
+  }
+  h1{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: rgb(68, 74, 249);
+    margin: 1.420rem;
+    margin-top: 2.69rem;
+    align-self: center;
+    /* margin-left: 2.4rem; */
+  }
+  .name{
+    border: 0.03rem solid rgb(172, 170, 170);
+    border-radius: 6.9px;
+    width: 16rem;
+    height: 2.2rem;
+  }
+
+  p{
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bolder;
+  }
+  .info{
+    border: 0.03rem solid rgb(172, 170, 170);
+    border-radius: 10px;
+    width: 33rem;
+    height: 2.2rem;
+  }
+  
+  #btn{
+    border: 0.03rem solid rgb(172, 170, 170);
+    font-size: 1rem;
+    border-radius: 6.9px;
+    width: 33rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background-color: rgb(128, 131, 255);
+    color: #ffff;
+  }
+  
+  .sbtns{
+    border: 0.03rem solid rgb(172, 170, 170);
+    border-radius: 4.9px;
+    padding: 0.4rem;
+    margin:0 1.3rem;
+    margin-left: 2.3rem;
+    /* padding: ; */
+    font-size: 0.9rem;
+    background-color: #ffff;
+  }
+  
+  label{
+    font-size: 0.89rem;
+    font-weight: bold;
+  }
+  
+  .btns{
+    text-decoration: none;
+    color: #333;
+    font-size: small;
+  }
+  
+  .or{
+    margin: 0.69rem;
+    margin-top: 1.69rem;
+  }
+}
+
+@media only screen and (max-width: 540px){
+  body{
+    /* margin: 0; */
+    /* width: 100%; */
+    background-color: rgb(190, 192, 255);
+    /* height: 100vh; */
+    font-family: 'Noto Sans JP', sans-serif;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+  }
+
+  .left{
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #bg{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+    background-color: rgb(199, 201, 248);
+  }
+  h1{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: rgb(68, 74, 249);
+    margin: 1.420rem;
+    margin-top: 2.69rem;
+    align-self: center;
+    /* margin-left: 2.4rem; */
+  }
+  .name{
+    border: 0.03rem solid rgb(178, 181, 239);
+    border-radius: 5px;
+    width: 8.3rem;
+    height: 1.69rem;
+    background-color: rgb(212, 214, 252);
+  }
+  .info{
+    border: 0.03rem solid rgb(178, 181, 239);
+    border-radius: 5px;
+    width: 17.3rem;
+    height: 1.69rem;
+    background-color: rgb(212, 214, 252);
+  }
+  #btn{
+    border: 0.03rem solid rgb(155, 160, 245);
+    font-size: 1rem;
+    border-radius: 6.9px;
+    width: 17.3rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background-color: rgb(128, 131, 255);
+    color: #ffff;
+  }
+  
+  .sbtns{
+    border: 0.03rem solid rgb(6, 6, 103);
+    border-radius: 4.9px;
+    padding: 0.4rem;
+    margin:0 0.2rem;
+    margin-left: 0.5rem;
+    /* padding: ; */
+    font-size: 0.1rem;
+    background-color: rgb(212, 214, 252);
+  }
+  
+  label{
+    font-size: 0.89rem;
+    font-weight: bold;
+  }
+  
+  .btns{
+    text-decoration: none;
+    color: #333;
+    font-size: small;
+  }
+  
+  .or{
+    margin: 0.69rem;
+    margin-top: 1.69rem;
+  }
+  p{
+    font-size: 0.79rem;
+    margin: 0;
+    font-weight: bolder;
+  }
+
+}
