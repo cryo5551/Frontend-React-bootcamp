@@ -1,0 +1,25 @@
+
+.mainDiv{
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 80vw;
+  margin:auto;
+  /* padding: 2rem; */
+}
+
+
+p {
+  text-transform: capitalize; 
+  margin: 0;
+  padding: 0.2rem;
+  background-color: #ffffff;
+
+ }
+
+ div{
+  margin: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 5px 10px; */
+ }
