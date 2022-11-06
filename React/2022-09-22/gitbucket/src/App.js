@@ -1,24 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import Details from "./components/Details";
+import Footer from "./components/Footer";
+import RepoList from "./components/RepoList";
+import Search from "./components/Search";
+import { github } from "./components/Util";
+import { useEffect,useState } from "react";
+
+
 
 function App() {
+
+  const [details, setDetails] = useState({});
+  const [followers, setFollowers] = useState([]);
+  const [repolist, setRepolist] = useState([]);
+  const [following, setFollowing] = useState([]);
+
+  useEffect( _ => {
+    ( async _ => {
+      const response = await github.get("/aayusharyan");
+      setDetails(response.data);
+    })();
+  }
+  ,[]);
+
+  useEffect(_ => {
+    (async _ => {
+      const followers = await github.get("/aayusharyan/followers");
+      setFollowers(followers.data);
+    })();
+  },[]);
+
+  useEffect(_ => {
+    (async _ => {
+      const following = await github.get("/aayusharyan/following");
+      setRepolist(following.data);
+    })();
+  },[]);
+
+  useEffect( _ => {
+    (async _ => {
+      const repolist = await github.get("/aayusharyan/repos");
+      setFollowing(repolist.data);
+    })();
+  },[]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <h2>GitFind</h2>
+      < Search />
+      < Details details={details} followers={followers} following={following}/>
+      < RepoList repolist={repolist} />
+      < Footer />
+    </main>
   );
 }
 
