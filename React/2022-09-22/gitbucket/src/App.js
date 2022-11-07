@@ -18,6 +18,7 @@ function App() {
     ( async _ => {
       const response = await github.get("/aayusharyan");
       setDetails(response.data);
+      console.log(response.data);
     })();
   }
   ,[]);
@@ -32,14 +33,14 @@ function App() {
   useEffect(_ => {
     (async _ => {
       const following = await github.get("/aayusharyan/following");
-      setRepolist(following.data);
+      setFollowing(following.data);
     })();
   },[]);
 
   useEffect( _ => {
     (async _ => {
       const repolist = await github.get("/aayusharyan/repos");
-      setFollowing(repolist.data);
+      setRepolist(repolist.data);
     })();
   },[]);
 
@@ -47,7 +48,7 @@ function App() {
     <main>
       <h2>GitFind</h2>
       < Search />
-      < Details details={details} followers={followers} following={following}/>
+      < Details details={details} followers={followers} following={following} repolist={repolist}/>
       < RepoList repolist={repolist} />
       < Footer />
     </main>
