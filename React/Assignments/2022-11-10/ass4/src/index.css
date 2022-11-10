@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* #ff6183 */
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nevbar{
+  display: flex;
+}
+
+h3{
+  margin: 0;
+  padding: 0;
+  color:#ff6183;
+}
+
+.ff{
+  margin-right: 3.3rem;
+  margin-top: 9rem;
+}
+
+.ff2{
+
+  margin-top: 2rem;
+  
+}
+
+i, p{
+  font-size: smaller;
+  margin: 0;
+
+}
+
+.btn{
+  color: rgb(50, 49, 49);
+  font-weight: bold;
+  background-color: #ff6183;
+  width: 6rem;
+  height: 2rem;
+  border:#ff6183 solid 1px;
+  border-radius: 10px;
+  position: relative;
+  top: 1.5rem;
+  left: 20rem;
+}
