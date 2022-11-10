@@ -206,9 +206,9 @@ input {
   font-weight: bold;
 }
 
-.hide, h3, a{
+/* .hide, h3, a{
   display: none;
-}
+} */
 
 /* .img:hover, .hide:hover, h3:hover, a:hover{ */
   /* display: block; */
