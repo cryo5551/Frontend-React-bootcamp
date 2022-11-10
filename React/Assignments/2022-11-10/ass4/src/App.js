@@ -8,7 +8,7 @@ const [myStyle, setMyStyle] = useState({
 })
 
 const toggle = _ =>{
-  if(myStyle.color == 'white'){
+  if(myStyle.color === 'white'){
     setMyStyle({
       color:'black',
       backgroundColor:'white',
@@ -54,7 +54,7 @@ const toggle = _ =>{
           <p><i style={myStyle}>Sunday 4rt,2020 11 min read</i></p>
           <p><i style={myStyle}>Come waste your time with me</i></p>
         </div>
-        
+
       </main>
     </div>
   );
