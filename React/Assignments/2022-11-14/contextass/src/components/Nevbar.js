@@ -1,8 +1,17 @@
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import ThemeContext from '../context'
 
 const Nevbar = (props) => {
+
+    const {mode, setMode} = useContext(ThemeContext);
+
+    // const show = _ => {
+    //     return();
+    // }
     return (
         <>
+        
         <div>Geekster</div>
         <Link to="/">Home</Link> 
         <br/>
@@ -11,7 +20,7 @@ const Nevbar = (props) => {
         <Link to="/Services">Services</Link> 
         <br/>
         <br/>
-        <button onClick={() =>{props.setTheme((prevState) => !prevState )}}>Toggle theme to {props.theme?"Dark":"Light"}</button>
+        <button onClick={() =>{setMode((prevState) => !prevState )}} >Toggle theme to {mode?"Dark":"Light"}</button>
 
         </>
     );
