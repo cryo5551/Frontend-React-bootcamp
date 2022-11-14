@@ -6,9 +6,7 @@ const Nevbar = (props) => {
 
     const {mode, setMode} = useContext(ThemeContext);
 
-    // const show = _ => {
-    //     return();
-    // }
+
     return (
         <>
         

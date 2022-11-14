@@ -1,13 +1,19 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 
-const toggler = createSlice({
-    name: 'default',
+const themeToggler = createSlice({
+    name: 'Themes',
     initialState:{
-
+        theme: true,
     },
 
     reducers: {
-        setValue: (initialState, action) => {}
+        setTheme: (initialState, action) => {
+            initialState.theme = !initialState.theme
+        }
     }
 });
+
+
+export const { setTheme } = themeToggler.actions;
+export default themeToggler.reducer;
