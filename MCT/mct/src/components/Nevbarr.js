@@ -8,8 +8,6 @@ import ThemeContext from '../context'
 
 
 
-
-
 const Nevbarr = props => {
 
   const { mode, setMode } = useContext(ThemeContext);
@@ -22,7 +20,7 @@ const Nevbarr = props => {
           <Nav.Link href="#home">Home</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link href="#memes">
+          <Nav.Link href="#home">
 
             <Form>
               <div className='nevbar'>
@@ -31,11 +29,12 @@ const Nevbarr = props => {
                 id="custom-switch"
                 onClick={() => { setMode((prevState) => !prevState) }}
               />
-              {/* <p>change to {mode ? "Dark" : "Light"} mode</p> */}
               </div>
             </Form>
+            
 
           </Nav.Link>
+          <Nav.Link href="#home">Enable {mode ? "Dark" : "Light"} mode</Nav.Link>
         </Nav>
 
 

@@ -8,7 +8,7 @@ import Home from './components/Home';
 function App() {
   const [mode, setMode] = useState(true);
   return (
-    <div className="App">
+    <div id="App" className={mode ? "light" : "dark"}>
       <ThemeContext.Provider value={{mode, setMode}}>
         <Home/>
       </ThemeContext.Provider>
