@@ -165,7 +165,7 @@ const multi = (a) => {
     const multi2 = (b) => {
 
         const multi3 = (c) => {
-            console.log(a*b*c);
+            console.log(a*b+c);
         }
         return multi3;
     }
